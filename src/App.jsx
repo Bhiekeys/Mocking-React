@@ -2,7 +2,7 @@
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import { useState } from 'react';
 import './App.css';
-import Home from "./pages/home";
+import Home from "./pages/Home";
 import Artist from './pages/Artist';
 import Music from './pages/Music';
 import Videos from './pages/Videos';
