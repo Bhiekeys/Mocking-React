@@ -4,8 +4,10 @@ import About from "../components/about"
 import Asecond from '../components/Asecond'
 import Break from "../components/break"
 import Footer from "../components/footer"
+
 const Home = () => {
     return (
+        
         <>
             <Header />
             <Landing/>

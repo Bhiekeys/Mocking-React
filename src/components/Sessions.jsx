@@ -8,9 +8,9 @@ const Sessions = () => {
       //       Book a studio session today!
       //     </p>
       //   </div>
-      <div className="py-[80px]">
-        <div className="try mt-7">
-          <p className="txt text-5xl text-white font-semibold">
+      <div className="pt-[80px]">
+        <div className="try mt-7 w-[95%]">
+          <p className="txt text-4xl md:text-5xl text-white font-semibold text-center">
             Book a studio session today!
           </p>
         </div>

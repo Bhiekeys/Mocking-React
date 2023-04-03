@@ -11,17 +11,20 @@ import Co from '../assets/co.png'
 import Contra from '../assets/contra.png'
 import Kitty from '../assets/kitty.png'
 import Artists from '../assets/artists.png';
-
+import Search from '../assets/search.png'
 const Artistes = () => {
   return (
-    <div className='py-[80px]'>
+    <div className="py-[80px]">
       <div className="flex justify-between items-center md:mx-[65px] mt-10 mb-4">
-        <h3 className='font-semibold'>Meet our Top Artistes</h3>
-        <input
-          type="text"
-          placeholder="search"
-          className="border border-black w-32 py-1 rounded-xl outline-none placeholder:text-black"
-        />
+        <h3 className="font-semibold">Meet our Top Artistes</h3>
+        <div className="flex items-center px-2 border border-black rounded-xl">
+          <input
+            type="text"
+            placeholder="search"
+            className=" w-32 py-1 border-black outline-none placeholder:text-black"
+          />
+          <img src={Search} className="h-5" />
+        </div>
       </div>
       <div>
         <div className="flex justify-center gap-5 lg:gap-40 text-center lg:text-left">
@@ -40,7 +43,7 @@ const Artistes = () => {
           <ArtistesContent image={Kitty} name="Kitty Cash" />
         </div>
       </div>
-      <div className='md:mb-44'>
+      <div className="md:mb-44">
         <img src={Artists} />
       </div>
     </div>
