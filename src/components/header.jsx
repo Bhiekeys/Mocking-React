@@ -1,7 +1,7 @@
 /** @format */
 import Logo from '../assets/logo.png';
+import { NavLink } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-
 const Header = () => {
   const navLinks = [
     {
@@ -32,12 +32,23 @@ const Header = () => {
         <ul className="flex gap-7 lg:gap-20 items-center text-black cursor-pointer">
           {navLinks?.map((links, i) => (
             <li key={i}>
-              <Link to={links?.link}>{links.text}</Link>
+              <NavLink
+                to={links?.link}
+                className={({ isActive }) => {
+                  return (
+                    'text-black' +
+                    (!isActive ? 'border border-neutral-800 ' : 'underline')
+                  );
+                }}>
+                {links.text}
+              </NavLink>
             </li>
           ))}
         </ul>
+
         <button className="text-[#F20A0A]">
           <Link to="/session">BOOK A SESSION</Link>
+         
         </button>
       </nav>
     </header>

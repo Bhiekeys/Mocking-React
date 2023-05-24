@@ -16,12 +16,13 @@ const Asecond = () => {
         <p className="text-lg mb-4 lg:w-[70%]">
           We have a transparent structure ensuring that revenues made through
           content distribution get to these artistes, producers and songwriters
-          as due them.
-          <p className="mt-5">
-            We are a music company that is more artistic with extra support that
-            ensures result for our signed talents.
-          </p>
+          as due them.{' '}
         </p>
+        <p className="mt-5 text-lg mb-4 lg:w-[70%]">
+          We are a music company that is more artistic with extra support that
+          ensures result for our signed talents.
+        </p>
+
         <div>
           <button className="bg-[#222222] text-white px-3 py-1 rounded-sm">
             Learn more
